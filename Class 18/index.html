@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="style.css" rel="stylesheet">
+	</head>
+	<body>
+
+		<script type="orange" id="github_profile_template">
+			<div class="profile">
+				<img src="<%= avatar_url %>">
+				<h2><a href="<%= html_url %>" target="_blank">@<%=login%></a></h2>
+				<hr>
+				<ul>
+					<li><strong>Name:</strong> <%= name %></li>
+					<li><strong>Blog:</strong> <a href="<%= blog %>"><%= blog %></a></li>
+					<li><strong>Location:</strong> <%= location %></li>
+				</ul>
+			</div>
+		</script>
+
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.min.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script src='./code.js'></script>
+	</body>
+</html>
