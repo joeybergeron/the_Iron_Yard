@@ -102,15 +102,17 @@ Calculator.prototype.multiply = function(x, y) {
     return (x * y);
 }
 Calculator.prototype.add = function(x, y) {
-    try {
-        return (x + y)
-        if (typeof x !== 'number')
-            throw new Error("Try again and remember to use numbers only.")
-        if (isNaN(x))
-            throw new Error("Not a number.")
-    } catch (err) {
-        console.log("ERROR" + err + )
-    }
+    return (x + y);
+    
+    // try {
+    //     return (x + y)
+    //     if (typeof x !== 'number')
+    //         throw new Error("Try again and remember to use numbers only.")
+    //     if (isNaN(x))
+    //         throw new Error("Not a number.")
+    // } catch (err) {
+    //     console.log("ERROR" + err + )
+    // }
 }
 Calculator.prototype.subtract = function(x, y) {
     return (x - y);
@@ -127,6 +129,7 @@ console.log(c.subtract(5, 10));
 console.log(c.divide(5, 10));
 console.log(c.add(5, 4, 3, 1, 10));
 console.log(c.add('a'));
+
 /////////////////////////////////////////////////////////////////
 ///////////////////////// PART II ///////////////////////////////
 ////////////////////////// BONUS ////////////////////////////////
