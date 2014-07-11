@@ -99,25 +99,23 @@ function Calculator(value) {
 }
 
 Calculator.prototype.multiply = function(x, y) {
+    if (typeof x !== 'number' || typeof y !== 'number')
+        throw new Error("Try again and remember to use numbers only.")    
     return (x * y);
 }
 Calculator.prototype.add = function(x, y) {
+    if (typeof x !== 'number' || typeof y !== 'number')
+            throw new Error("Try again and remember to use numbers only.")
     return (x + y);
-    
-    // try {
-    //     return (x + y)
-    //     if (typeof x !== 'number')
-    //         throw new Error("Try again and remember to use numbers only.")
-    //     if (isNaN(x))
-    //         throw new Error("Not a number.")
-    // } catch (err) {
-    //     console.log("ERROR" + err + )
-    // }
 }
 Calculator.prototype.subtract = function(x, y) {
+    if (typeof x !== 'number' || typeof y !== 'number')
+        throw new Error("Try again and remember to use numbers only.")
     return (x - y);
 }
 Calculator.prototype.divide = function(x, y) {
+    if (typeof x !== 'number' || typeof y !== 'number')
+        throw new Error("Try again and remember to use numbers only.")    
     return (x / y);
 }
 
