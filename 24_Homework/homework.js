@@ -64,7 +64,7 @@ function Barn() {
 }
 
 Barn.prototype.shelter = function(animal) {
-    this.shelteredAnimals.push(animal)
+    this.shelteredAnimals.push(animal);
 }
 
 Barn.prototype.rollCall = function() {
