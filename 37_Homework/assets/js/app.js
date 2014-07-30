@@ -8,15 +8,11 @@
 //                                //
 ////////////////////////////////////
 EtsyListing = Backbone.Model.extend({
-    urlRoot: '/listing/:id',
+    urlRoot: '/listing/',
     initialize: function() {
-        console.log("Gathering listings...");
-        this.on("invalid", function(model, error) {
-            alert(error);
-        });
         this.view = new ListingView({
             model: this
-        });     
+        });  
     }
 });
 /////////////////////////////////////////////////
@@ -33,7 +29,9 @@ EtsyListings = Backbone.Collection.extend({
         return 'https://openapi.etsy.com/v2/listings/active.js?api_key=' + this.api_key + '&includes=MainImage' + '&callback=?'
     },
     parse: function(resp, xhr) {
-        return resp.results;
+        return _.filter(resp.results, function(listing){
+            return !!listing.price;
+        });
     },
     model: EtsyListing,
     api_key: "7okfvpf465wxeoopuib7qgbe",
