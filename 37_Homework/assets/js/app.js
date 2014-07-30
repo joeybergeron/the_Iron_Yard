@@ -30,7 +30,7 @@ EtsyListings = Backbone.Collection.extend({
     },
     parse: function(resp, xhr) {
         return _.filter(resp.results, function(listing){
-            return !!listing.price; || !!listing.MainImage;
+            return !!listing.price;
         });
     },
     model: EtsyListing,
