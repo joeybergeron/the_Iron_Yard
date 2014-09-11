@@ -1,7 +1,7 @@
 the Iron Yard
 =============
 
-Classwork, Homework & Projects with **the Iron Yard**
+##Homework
 
 - 02 Homework - HTML, CSS, Form Profile Bio
 - 04 Homework - blog layout v1, Surf'N'Paddle design
@@ -20,4 +20,4 @@ Classwork, Homework & Projects with **the Iron Yard**
 - 23 Homework Modified - redesigned ColorClock and cleaned JS
 - 24 Homework - prototypes and constructors
 - 25 Homework - more constructors, the stopwatch clock assignment
-- 37 - Backbone!!!!!!!! -- Backbone.Model, Backbone.Collection, Backbone.View, Backbone.Router
+- 37 Homework - Backbone!!!!!!!! -- Backbone.Model, Backbone.Collection, Backbone.View, Backbone.Router
