@@ -36,7 +36,7 @@ h3 {
 p {
 	font-size: 1.6em;
 	width: 70%;
-	padding: 10px auto;
+	padding: 2em 0px 1em 0px;
 }
 a{
 	color: rgb(100, 173, 172);
@@ -50,44 +50,13 @@ ul li {
 	-moz-background-size: cover;
 	background-size: cover;
 	height: 1080px;
-	margin-bottom: 50px;
 }
-.ill02 {
-	margin-bottom: 50px;
-}
-.ill02 ul{
-	padding: 0px;
-	font-size: 0px;
-	text-align: center; 
-}
-.ill02 li {
-	display: inline-block;
-	width: 25%;
-	height: 400px;
-}
-.ill02 li:nth-child(1){
-	background: url('../img/set1/crystal.gif');
-	background-size: cover;
-}
-.ill02 li:nth-child(2){
-	background: url('../img/set1/polytronic.gif');
-	background-size: cover;
-}
-.ill02 li:nth-child(3){
-	background: url('../img/set1/retro_break.gif');
-	background-size: cover;
-}
-.ill02 li:nth-child(4){
-	background: url('../img/set1/waves_final.gif');
-	background-size: cover;
-}
-.ill03{
+.ill02{
 	background: url('../img/sunset.png') no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
 	height: 1080px;
-	margin: 50px 0;	
 }
 .tiles ul{
 	padding: 0px;
@@ -97,36 +66,27 @@ ul li {
 .tiles li {
 	display: inline-block;
 	width: 25%;
-	height: 400px;
-}
-.tiles li:nth-child(1){
-	background: url('../img/set2/return_of_the_triangle3.gif');
-	background-size: cover;
-}
-.tiles li:nth-child(2){
-	background: url('../img/set2/tri_heart2.gif');
-	background-size: cover;
-}
-.tiles li:nth-child(3){
-	background: url('../img/set2/tri_slice.gif');
-	background-size: cover;
-}
-.tiles li:nth-child(4){
-	background: url('../img/set2/trigon.gif');
-	background-size: cover;
 }
 footer{
 	background-color: rgb(100, 173, 172);
-	height: 120px;
+	height: 10.5em;
 	text-align: center;
 	font-family: geosanslight-nmsregular;
 	color: white;
 }
 footer p{
 	vertical-align: middle;
-	padding-top: 25px;
+	padding-top: 2.4em;
 }
 footer a{
 	text-decoration: none;
 	color: white;
+}
+
+/* Correcting responsiveness of tiles when on different resolutions*/
+@media screen and (max-width: 58em) { 
+	.tiles li {
+		width: 50%;
+	}
+	
 }
